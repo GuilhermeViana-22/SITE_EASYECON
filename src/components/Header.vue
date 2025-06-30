@@ -27,7 +27,6 @@
       </button>
     </nav>
     
-    <!-- Mobile menu -->
     <div v-if="mobileMenuOpen" class="md:hidden bg-[#110F1F] border-t border-slate-800">
       <div class="px-4 py-2 space-y-2">
         <a href="#solutions" class="block py-2 text-gray-300 hover:text-blue-400">Solutions</a>

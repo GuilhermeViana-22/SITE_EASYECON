@@ -52,7 +52,6 @@ export default {
 </script>
 
 <style>
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -70,12 +69,10 @@ export default {
   background: #64748b;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
