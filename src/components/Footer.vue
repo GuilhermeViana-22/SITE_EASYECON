@@ -3,12 +3,20 @@
     <div class="container mx-auto">
       <div class="grid md:grid-cols-4 gap-8 mb-8">
         <div>
-          <div class="flex items-center space-x-2 mb-4">
+          <div class="flex items-center space-x-2">
+        <div class="rounded-lg flex items-center justify-center gap-2">
+          <img src="/public/easyIcon.png" alt="Logotipo" class="w-9 h-9" />
+
+          <img src="/public/logoName.png" alt="Logotipo" class="w-28 mt-1" />
+        </div>
+        <!-- /home/gabdev/Downloads/logoName.png -->
+      </div>
+          <!-- <div class="flex items-center space-x-2 mb-4">
             <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
               <span class="text-white font-bold text-sm">AS</span>
             </div>
             <span class="text-xl font-bold text-white">Amane Soft</span>
-          </div>
+          </div> -->
           <p class="text-gray-400 mb-4">Soluções de software pioneiras para a era digital.</p>
           <div class="flex space-x-4">
             <a href="#" class="text-gray-400 hover:text-white transition-colors">

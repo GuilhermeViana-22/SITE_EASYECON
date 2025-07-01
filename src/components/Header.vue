@@ -2,10 +2,12 @@
   <header class="fixed top-0 w-full z-50 bg-[#110F1F]/90 backdrop-blur-md border-b border-slate-800">
     <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 rounded-lg flex items-center justify-center">
-          <img src="/public/easyIcon.png" alt="Logotipo" />
+        <div class="rounded-lg flex items-center justify-center gap-2">
+          <img src="/public/easyIcon.png" alt="Logotipo" class="w-9 h-9" />
+
+          <img src="/public/logoName.png" alt="Logotipo" class="w-28 mt-1" />
         </div>
-        <span class="text-xl font-bold text-white">EasyEcon</span>
+        <!-- /home/gabdev/Downloads/logoName.png -->
       </div>
 
       <div class="hidden md:flex items-center space-x-8">
