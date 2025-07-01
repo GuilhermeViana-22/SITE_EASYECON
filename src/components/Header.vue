@@ -7,7 +7,6 @@
 
           <img src="/public/logoName.png" alt="Logotipo" class="w-28 mt-1" />
         </div>
-        <!-- /home/gabdev/Downloads/logoName.png -->
       </div>
 
       <div class="hidden md:flex items-center space-x-8">
@@ -18,7 +17,7 @@
       </div>
 
       <button
-        class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 text-white">
+        class="hidden md:block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 text-white">
         Agendar demostração
       </button>
 
