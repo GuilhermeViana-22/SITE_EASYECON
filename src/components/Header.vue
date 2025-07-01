@@ -1,6 +1,11 @@
 <template>
-  <header class="fixed top-0 w-full z-50 bg-primary-dark/90 backdrop-blur-md border-b border-slate-800/50">
-    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+  <header class="fixed top-0 w-full z-50 bg-primary-dark/90 backdrop-blur-md border-b border-slate-800/50 relative overflow-hidden">
+    <!-- Efeito de raio verde animado -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="green-ray absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-transparent via-primary-green/30 to-transparent transform -skew-x-12 animate-ray"></div>
+    </div>
+    
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between relative z-10">
       <div class="flex items-center space-x-2">
         <div class="rounded-lg flex items-center justify-center gap-2">
           <img src="/public/easyIcon.png" alt="Logotipo" class="w-9 h-9" />
@@ -51,3 +56,61 @@ export default {
   emits: ['toggle-mobile-menu']
 }
 </script>
+
+<style scoped>
+@keyframes ray {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) skewX(-12deg);
+    opacity: 0;
+  }
+}
+
+.animate-ray {
+  animation: ray 2s ease-in-out infinite;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Configura o ciclo de 10 segundos com pausa */
+.green-ray {
+  animation: ray 2s ease-in-out 0s infinite;
+  animation-play-state: running;
+}
+
+/* Controla o timing: 2s de animação a cada 10s */
+@keyframes rayWithPause {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(calc(100vw + 100px)) skewX(-12deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) skewX(-12deg);
+    opacity: 0;
+  }
+}
+
+.green-ray {
+  animation: rayWithPause 10s ease-in-out infinite;
+}
+</style>
