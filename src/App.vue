@@ -1,19 +1,35 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-[#110F1F] via-gray-900 to-black text-white">
-    <Header 
-      :mobileMenuOpen="mobileMenuOpen" 
-      @toggle-mobile-menu="mobileMenuOpen = !mobileMenuOpen"
-    />
+  <div class="min-h-screen bg-primary-dark text-white relative overflow-hidden">
+    <!-- Background blurs verdes decorativos -->
+    <div class="fixed inset-0 pointer-events-none">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-radial-green-soft blur-3xl opacity-20"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-radial-green-soft blur-3xl opacity-15"></div>
+      <div class="absolute top-3/4 left-1/2 w-64 h-64 bg-radial-green-soft blur-3xl opacity-10"></div>
+    </div>
     
-    <HeroSection />
-    <SolutionsSection />
-    <WhyChooseUsSection />
-    <SuccessCasesSection />
-    <TestimonialsSection />
-    <TeamSection />
-    <CTASection />
-    <ContactSection />
-    <Footer />
+    <div class="relative z-10">
+      <Header 
+        :mobileMenuOpen="mobileMenuOpen" 
+        @toggle-mobile-menu="mobileMenuOpen = !mobileMenuOpen"
+      />
+      
+      <HeroSection />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <SolutionsSection />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <WhyChooseUsSection />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <SuccessCasesSection />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <TestimonialsSection />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <TeamSection />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <CTASection />
+      <div class="py-12"></div> <!-- Espaçamento menor antes do footer -->
+      <ContactSection />
+      <Footer />
+    </div>
   </div>
 </template>
 

@@ -1,21 +1,23 @@
 <template>
-  <section class="py-20 px-4 bg-gradient-to-r from-[#110F1F] to-gray-900">
-    <div class="container mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Por que escolher a EasyEcon?</h2>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+  <section class="py-24 px-4 relative">
+    <!-- Subtle background blur -->
+    <div class="absolute inset-0 bg-radial-green-soft opacity-3 blur-3xl"></div>
+    
+    <div class="container mx-auto relative z-10">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Por que escolher a EasyEcon?</h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           Nossa expertise e compromisso com a inovação nos tornam o parceiro ideal para sua transformação digital.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="benefit in benefits" :key="benefit.id" class="text-center">
-          <div
-            :class="`w-16 h-16 bg-gradient-to-r ${benefit.gradient} rounded-full flex items-center justify-center mx-auto mb-6`">
-            <component :is="benefit.icon" class="w-8 h-8 text-white" />
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div v-for="benefit in benefits" :key="benefit.id" class="text-center group">
+          <div class="w-18 h-18 bg-gradient-to-r from-primary-green to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary-green/30 transition-all duration-300">
+            <component :is="benefit.icon" class="w-9 h-9 text-primary-dark" />
           </div>
-          <h3 class="text-2xl font-bold mb-4 text-white">{{ benefit.title }}</h3>
-          <p class="text-gray-300">{{ benefit.description }}</p>
+          <h3 class="text-2xl font-bold mb-6 text-white group-hover:text-primary-green transition-colors duration-300">{{ benefit.title }}</h3>
+          <p class="text-gray-300 leading-relaxed">{{ benefit.description }}</p>
         </div>
       </div>
     </div>
@@ -39,21 +41,18 @@ export default {
           id: 1,
           title: 'Inovação Constante',
           description: 'Sempre na vanguarda das tecnologias emergentes, garantindo soluções futuro-proof.',
-          gradient: 'from-blue-500 to-purple-600',
           icon: BoltIcon
         },
         {
           id: 2,
           title: 'Time Especializado',
           description: 'Profissionais altamente qualificados com vasta experiência em projetos complexos.',
-          gradient: 'from-green-500 to-emerald-600',
           icon: UsersIcon
         },
         {
           id: 3,
           title: 'Resultados Comprovados',
           description: 'Histórico de sucesso com clientes de diversos setores e tamanhos.',
-          gradient: 'from-purple-500 to-pink-600',
           icon: CheckCircleIcon
         }
       ]
