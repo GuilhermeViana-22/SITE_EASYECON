@@ -2,7 +2,9 @@
   <section id="solutions" class="py-24 px-4">
     <div class="container mx-auto">
       <div class="text-center mb-20">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Tecnologia de Ponta para o Sucesso do Seu Negócio</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
+          Tecnologia de <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-green via-emerald-400 to-cyan-400">Ponta</span> para o Sucesso do Seu Negócio
+        </h2>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           Descubra como nossas soluções podem acelerar seu crescimento com inovação, eficiência e segurança.
         </p>

@@ -5,7 +5,9 @@
     
     <div class="container mx-auto relative z-10">
       <div class="text-center mb-20">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Transformação Digital que Impulsiona Resultados</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
+          Transformação <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-green via-emerald-400 to-cyan-400">Digital</span> que Impulsiona Resultados
+        </h2>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           Empresas que adotaram nossas soluções de CRM e automação digital viram seus lucros aumentarem em até 200%
         </p>

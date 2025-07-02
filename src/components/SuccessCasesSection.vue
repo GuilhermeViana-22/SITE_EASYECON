@@ -2,7 +2,9 @@
   <section class="py-24 px-4">
     <div class="container mx-auto">
       <div class="text-center mb-20">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Casos de Sucesso</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
+          Casos de <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-green via-emerald-400 to-cyan-400">Sucesso</span>
+        </h2>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           Conheça alguns dos projetos que transformaram negócios e impulsionaram o crescimento de nossos clientes.
         </p>
