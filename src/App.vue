@@ -19,6 +19,8 @@
       <div class="py-16"></div> <!-- Espaçamento adicional -->
       <WhyChooseUsSection />
       <div class="py-16"></div> <!-- Espaçamento adicional -->
+      <CommitTree />
+      <div class="py-16"></div> <!-- Espaçamento adicional -->
       <SuccessCasesSection />
       <div class="py-16"></div> <!-- Espaçamento adicional -->
       <TestimonialsSection />
@@ -38,6 +40,7 @@ import Header from './components/Header.vue'
 import HeroSection from './components/HeroSection.vue'
 import SolutionsSection from './components/SolutionsSection.vue'
 import WhyChooseUsSection from './components/WhyChooseUsSection.vue'
+import CommitTree from './components/CommitTree.vue'
 import SuccessCasesSection from './components/SuccessCasesSection.vue'
 import TestimonialsSection from './components/TestimonialsSection.vue'
 import TeamSection from './components/TeamSection.vue'
@@ -52,6 +55,7 @@ export default {
     HeroSection,
     SolutionsSection,
     WhyChooseUsSection,
+    CommitTree,
     SuccessCasesSection,
     TestimonialsSection,
     TeamSection,

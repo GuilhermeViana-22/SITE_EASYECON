@@ -47,7 +47,7 @@
             <div class="avatar-inner">
               <div class="avatar-glow"></div>
               <div class="avatar-image">
-                <span class="text-2xl font-bold text-primary-dark">{{ member.avatar }}</span>
+                <img :src="member.avatar" alt="Avatar">
               </div>
               <!-- Scanning effect -->
               <div class="scan-line"></div>
@@ -102,35 +102,27 @@ export default {
       teamMembers: [
         {
           id: 1,
-          name: 'Rafael Costa',
-          position: 'CEO & Founder',
-          avatar: 'RC',
-          description: 'Visionário em arquitetura de software e IA',
-          skills: ['Leadership', 'AI/ML', 'Strategy']
+          name: 'Robert Uilians',
+          position: 'CTO',
+          avatar: new URL('../assets/images/team/Robert_Uilians_cto.png', import.meta.url).href,
+          description: 'Chief Technology Officer com vasta experiência em arquitetura de sistemas e liderança técnica. Especialista em desenvolvimento de soluções escaláveis e inovadoras.',
+          skills: ['Leadership', 'System Architecture', 'Cloud Computing']
         },
         {
           id: 2,
-          name: 'Lucia Martins',
-          position: 'CTO',
-          avatar: 'LM',
-          description: 'Especialista em Machine Learning e Cloud',
-          skills: ['ML/AI', 'Cloud', 'DevOps']
+          name: 'Guilherme Viana',
+          position: 'Desenvolvedor Full Stack',
+          avatar: new URL('../assets/images/team/guilherme_Viana_.png', import.meta.url).href,
+          description: 'Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais. Expert em tecnologias web modernas e desenvolvimento de aplicações robustas.',
+          skills: ['Vue.js', 'Node.js', 'Database Design']
         },
         {
           id: 3,
-          name: 'Diego Pereira',
-          position: 'Head of Security',
-          avatar: 'DP',
-          description: 'Expert em cibersegurança e blockchain',
-          skills: ['Security', 'Blockchain', 'Pentesting']
-        },
-        {
-          id: 4,
-          name: 'Carla Santos',
-          position: 'Head of Design',
-          avatar: 'CS',
-          description: 'UX/UI Designer especialista em interfaces futurísticas',
-          skills: ['UX/UI', 'Design Systems', '3D']
+          name: 'Castro',
+          position: 'Desenvolvedor Mobile',
+          avatar: new URL('../assets/images/team/Castro_dev_mobile.png', import.meta.url).href,
+          description: 'Especialista em desenvolvimento mobile com foco em aplicações nativas e híbridas. Dedicado a criar interfaces intuitivas e performáticas para dispositivos móveis.',
+          skills: ['React Native', 'Flutter', 'Mobile UX']
         }
       ]
     }
@@ -324,6 +316,14 @@ export default {
   justify-content: center;
   z-index: 2;
   transition: transform 0.6s ease;
+  overflow: hidden;
+}
+
+.avatar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .team-card:hover .avatar-image {
