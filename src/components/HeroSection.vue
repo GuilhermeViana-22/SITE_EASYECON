@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="pt-32 pb-24 px-4 relative min-h-[600px] flex items-center"
+    class="pt-32 md:pt-52 md:pb-24 px-4 relative min-h-[600px] flex items-center"
     :style="{ backgroundImage: `url(${backgroundImage})` }"
   >
     <!-- Blur verde sutil no fundo -->

@@ -1,5 +1,5 @@
 <template>
-  <div class="commit-tree-container py-16 bg-primary-dark">
+  <div class="commit-tree-container py-16">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-primary-green text-3xl md:text-4xl font-bold mb-8">
         Entrega Dinâmica
@@ -147,9 +147,5 @@ export default {
 
 .commit:hover {
   transform: scale(1.05);
-}
-
-.commit-tree-container {
-  background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
 }
 </style> 

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32 px-4 relative overflow-hidden">
+  <section class="md:pt-32 md:pb-32 pb-22 px-4 relative overflow-hidden">
     <!-- Background futurístico -->
     <div class="absolute inset-0">
       <!-- Subtle background blur -->
@@ -106,19 +106,19 @@
         <div class="stat-card">
           <div class="stat-number">4.9</div>
           <div class="stat-label">Rating Médio</div>
-          <div class="stat-stars">⭐⭐⭐⭐⭐</div>
+
         </div>
         <div class="stat-divider"></div>
         <div class="stat-card">
           <div class="stat-number">500+</div>
           <div class="stat-label">Clientes Felizes</div>
-          <div class="stat-emoji">😍</div>
+
         </div>
         <div class="stat-divider"></div>
         <div class="stat-card">
           <div class="stat-number">98%</div>
           <div class="stat-label">Recomendam</div>
-          <div class="stat-emoji">🚀</div>
+
         </div>
       </div>
     </div>
