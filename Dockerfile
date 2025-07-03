@@ -51,7 +51,7 @@ RUN touch /var/run/nginx.pid && \
 USER nextjs
 
 # Expor porta 8081 (não privilegiada)
-EXPOSE 8081
+EXPOSE 8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
